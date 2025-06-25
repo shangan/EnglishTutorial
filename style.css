@@ -314,7 +314,7 @@ header p {
     .grade-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .grade-btn {
         padding: 40px 15px;
         font-size: 1.5em;

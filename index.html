@@ -5,6 +5,347 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小学英语练习助手</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 添加新的样式 */
+        .current-grade {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 10px 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .current-grade h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #4a90e2;
+            flex-grow: 1;
+        }
+        
+        .grade-switch-btn {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .grade-switch-btn:hover {
+            background-color: #3a7bc8;
+            transform: translateY(-2px);
+        }
+        
+        .grade-switch-btn i {
+            font-size: 1rem;
+        }
+        
+        /* 新增对话和单词类别选择器样式 */
+        .category-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 10px 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .category-header h2 {
+            margin: 0;
+            font-size: 1.4rem;
+            color: #4a90e2;
+        }
+        
+        .category-selector {
+            position: relative;
+            min-width: 180px;
+        }
+        
+        .category-selector select {
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 35px 8px 15px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .category-selector select:hover {
+            background-color: #3a7bc8;
+        }
+        
+        .category-selector::after {
+            content: "▼";
+            font-size: 0.7rem;
+            color: white;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        
+        /* 修改对话和单词练习容器样式 */
+        .dialogue-container, .word-practice-container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* 单词练习模式显示样式 */
+        .practice-mode-display {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* 单词练习选项样式 */
+        .word-practice-options {
+            margin-bottom: 20px;
+        }
+        
+        .practice-options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .option-btn {
+            background-color: white;
+            border: 2px solid #4a90e2;
+            border-radius: 12px;
+            padding: 15px;
+            font-size: 1rem;
+            color: #4a90e2;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 100px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .option-btn:hover {
+            background-color: #4a90e2;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* 单词显示区域样式 */
+        #word-display {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        #word-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        #word-prompt {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        /* 单词音频按钮样式 */
+        .audio-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .audio-btn:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+        
+        /* 输入区域样式 */
+        .input-area {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #word-input {
+            flex-grow: 1;
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        #word-input:focus {
+            border-color: #4a90e2;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+        }
+        
+        /* 结果显示样式 */
+        #word-result {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        #word-result.correct {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        #word-result.incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        /* 控制按钮样式 */
+        .word-controls, .dialogue-controls, .match-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .action-btn {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .action-btn:hover {
+            background-color: #3a7bc8;
+            transform: translateY(-2px);
+        }
+        
+        .back-btn {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background-color: #5a6268;
+            transform: translateY(-2px);
+        }
+        
+        /* 单词配对游戏样式 */
+        #match-board {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .match-card {
+            position: relative;
+            height: 100px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        
+        .match-card-front, .match-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.6s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .match-card-front {
+            background-color: #4a90e2;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .match-card-back {
+            background-color: white;
+            color: #333;
+            transform: rotateY(180deg);
+            font-size: 1rem;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .match-card.flipped .match-card-front {
+            transform: rotateY(180deg);
+        }
+        
+        .match-card.flipped .match-card-back {
+            transform: rotateY(0);
+        }
+        
+        .match-card.matched .match-card-back {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        #match-result {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #4a90e2;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -30,7 +371,9 @@
         <div id="main-menu" class="menu-container" style="display: none;">
             <div class="current-grade">
                 <h3>当前年级: <span id="current-grade-display">三年级</span></h3>
-                <button class="small-btn" onclick="backToGradeSelection()">切换年级</button>
+                <button class="grade-switch-btn" onclick="backToGradeSelection()">
+                    <i>🔄</i> 切换年级
+                </button>
             </div>
             <div class="menu-grid">
                 <button class="menu-btn" onclick="startDialogue()">
@@ -47,7 +390,12 @@
 
         <!-- 单词练习选项 -->
         <div id="word-practice-options" class="section" style="display: none;">
-            <h2>单词练习模式</h2>
+            <div class="category-header">
+                <h2>单词练习模式</h2>
+                <button class="grade-switch-btn" onclick="backToMenu()">
+                    <i>↩️</i> 返回主菜单
+                </button>
+            </div>
             <div class="practice-options-grid">
                 <button class="option-btn" onclick="startWordPractice('cn-to-en')">
                     🇨🇳➡️🇬🇧 看中文写英文
@@ -62,17 +410,18 @@
                     🔄 单词配对
                 </button>
             </div>
-            <button onclick="backToMenu()" class="back-btn">返回主菜单</button>
         </div>
 
         <!-- 对话练习模块 -->
         <div id="dialogue-section" class="section" style="display: none;">
-            <h2>对话练习</h2>
-            <div class="dialogue-category-selector">
-                <select id="dialogue-category">
-                    <option value="all">所有对话</option>
-                    <!-- 动态填充对话类别 -->
-                </select>
+            <div class="category-header">
+                <h2>对话练习</h2>
+                <div class="category-selector">
+                    <select id="dialogue-category">
+                        <option value="all">所有对话</option>
+                        <!-- 动态填充对话类别 -->
+                    </select>
+                </div>
             </div>
             <div class="dialogue-container">
                 <div id="dialogue-content"></div>
@@ -86,14 +435,16 @@
 
         <!-- 单词练习模块 -->
         <div id="word-section" class="section" style="display: none;">
-            <h2>单词练习</h2>
-            <div class="word-category-selector">
-                <select id="word-category">
-                    <option value="all">所有单词</option>
-                    <!-- 动态填充单词类别 -->
-                </select>
+            <div class="category-header">
+                <h2>单词练习</h2>
+                <div class="category-selector">
+                    <select id="word-category">
+                        <option value="all">所有单词</option>
+                        <!-- 动态填充单词类别 -->
+                    </select>
+                </div>
             </div>
-            <div id="practice-mode-display" class="practice-mode-display">
+            <div class="practice-mode-display">
                 当前模式: <span id="current-mode">看中文写英文</span>
             </div>
             <div class="word-practice-container">
@@ -118,13 +469,17 @@
 
         <!-- 单词配对练习 -->
         <div id="match-section" class="section" style="display: none;">
-            <h2>单词配对练习</h2>
+            <div class="category-header">
+                <h2>单词配对练习</h2>
+                <button class="grade-switch-btn" onclick="backToWordOptions()">
+                    <i>↩️</i> 返回练习选项
+                </button>
+            </div>
             <div class="match-container">
                 <div id="match-board"></div>
                 <div id="match-result"></div>
                 <div class="match-controls">
-                    <button id="new-match-game" class="action-btn">新游戏</button>
-                    <button onclick="backToWordOptions()" class="back-btn">返回练习选项</button>
+                    <button id="new-match-game" class="action-btn" onclick="createMatchGame()">新游戏</button>
                 </div>
             </div>
         </div>
