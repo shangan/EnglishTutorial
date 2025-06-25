@@ -1144,5 +1144,338 @@ const gradeData = {
                 "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNDhDQUU0IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj53YWxrPC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7mraXooYw8L3RleHQ+Cjwvc3ZnPg=="
             }
         ]
+    },
+    "4": {
+        "name": "四年级",
+         "dialogues": [
+        {
+            "id": "4_1",
+            "category": "环境保护",
+            "title": "Protecting the Environment",
+            "conversation": [
+                {
+                    "speaker": "Teacher",
+                    "text": "What can we do to protect the environment?"
+                },
+                {
+                    "speaker": "Lisa",
+                    "text": "We can reduce, reuse and recycle."
+                },
+                {
+                    "speaker": "Teacher",
+                    "text": "Very good! Can you give me an example?"
+                },
+                {
+                    "speaker": "Lisa",
+                    "text": "We can use cloth bags instead of plastic bags."
+                },
+                {
+                    "speaker": "Teacher",
+                    "text": "Excellent! What else can we do, Tom?"
+                },
+                {
+                    "speaker": "Tom",
+                    "text": "We can save water and electricity."
+                }
+            ]
+        },
+        {
+            "id": "4_2",
+            "category": "职业",
+            "title": "Future Jobs",
+            "conversation": [
+                {
+                    "speaker": "Teacher",
+                    "text": "What do you want to be when you grow up?"
+                },
+                {
+                    "speaker": "Mike",
+                    "text": "I want to be a doctor. I want to help sick people."
+                },
+                {
+                    "speaker": "Teacher",
+                    "text": "That's wonderful! How about you, Sarah?"
+                },
+                {
+                    "speaker": "Sarah",
+                    "text": "I want to be a teacher like you."
+                },
+                {
+                    "speaker": "Teacher",
+                    "text": "That's great! And you, David?"
+                },
+                {
+                    "speaker": "David",
+                    "text": "I want to be a scientist and invent new things."
+                }
+            ]
+        },
+        {
+            "id": "4_3",
+            "category": "旅行",
+            "title": "Travel Plans",
+            "conversation": [
+                {
+                    "speaker": "Tom",
+                    "text": "Where did you go for your vacation?"
+                },
+                {
+                    "speaker": "Lucy",
+                    "text": "I went to Beijing with my family."
+                },
+                {
+                    "speaker": "Tom",
+                    "text": "What did you see there?"
+                },
+                {
+                    "speaker": "Lucy",
+                    "text": "We visited the Great Wall and the Forbidden City."
+                },
+                {
+                    "speaker": "Tom",
+                    "text": "That sounds interesting! Did you take any photos?"
+                },
+                {
+                    "speaker": "Lucy",
+                    "text": "Yes, I took many photos. I'll show you tomorrow."
+                }
+            ]
+        },
+        {
+            "id": "4_4",
+            "category": "健康生活",
+            "title": "Healthy Lifestyle",
+            "conversation": [
+                {
+                    "speaker": "Doctor",
+                    "text": "How can we stay healthy?"
+                },
+                {
+                    "speaker": "Student",
+                    "text": "We should eat healthy food and exercise regularly."
+                },
+                {
+                    "speaker": "Doctor",
+                    "text": "That's right. What kind of food is healthy?"
+                },
+                {
+                    "speaker": "Student",
+                    "text": "Fruits, vegetables, and whole grains are healthy."
+                },
+                {
+                    "speaker": "Doctor",
+                    "text": "Excellent! And how often should we exercise?"
+                },
+                {
+                    "speaker": "Student",
+                    "text": "We should exercise at least 30 minutes every day."
+                }
+            ]
+        },
+        {
+            "id": "4_5",
+            "category": "科技",
+            "title": "Technology Today",
+            "conversation": [
+                {
+                    "speaker": "Teacher",
+                    "text": "How do you use technology in your daily life?"
+                },
+                {
+                    "speaker": "Emma",
+                    "text": "I use a computer to do my homework and research."
+                },
+                {
+                    "speaker": "Teacher",
+                    "text": "Good. What about you, Jack?"
+                },
+                {
+                    "speaker": "Jack",
+                    "text": "I use my tablet to read e-books and watch educational videos."
+                },
+                {
+                    "speaker": "Teacher",
+                    "text": "Very good! Is technology always helpful?"
+                },
+                {
+                    "speaker": "Emma",
+                    "text": "Not always. We need to use it wisely and not too much."
+                }
+            ]
+        },
+        {
+            "id": "4_6",
+            "category": "文化差异",
+            "title": "Cultural Differences",
+            "conversation": [
+                {
+                    "speaker": "Teacher",
+                    "text": "Today we'll talk about different cultures. What do you know about American culture?"
+                },
+                {
+                    "speaker": "Student",
+                    "text": "Americans often eat hamburgers and celebrate Thanksgiving."
+                },
+                {
+                    "speaker": "Teacher",
+                    "text": "Yes, that's part of their culture. What about British culture?"
+                },
+                {
+                    "speaker": "Student",
+                    "text": "British people drink tea and they have a queen."
+                },
+                {
+                    "speaker": "Teacher",
+                    "text": "Good! Why is it important to learn about different cultures?"
+                },
+                {
+                    "speaker": "Student",
+                    "text": "It helps us understand and respect people from other countries."
+                }
+            ]
+        }
+    ],
+    "words": [
+        {
+            "id": "4_w1",
+            "category": "环境保护",
+            "word": "environment",
+            "meaning": "环境",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNENCQjE3IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5lbnZpcm9ubWVudDwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+546v5aKDPC90ZXh0Pgo8L3N2Zz4="
+        },
+        {
+            "id": "4_w2",
+            "category": "环境保护",
+            "word": "recycle",
+            "meaning": "回收利用",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjMDA5Njg4IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5yZWN5Y2xlPC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7lm57mlLbliKnnlKg8L3RleHQ+Cjwvc3ZnPg=="
+        },
+        {
+            "id": "4_w3",
+            "category": "环境保护",
+            "word": "plastic",
+            "meaning": "塑料",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjODdDRUZBIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5wbGFzdGljPC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7loZTmlYg8L3RleHQ+Cjwvc3ZnPg=="
+        },
+        {
+            "id": "4_w4",
+            "category": "职业",
+            "word": "doctor",
+            "meaning": "医生",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkY2QjZCIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5kb2N0b3I8L3RleHQ+Cjx0ZXh0IHg9IjEwMCIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuWMu+eUnjwvdGV4dD4KPC9zdmc+"
+        },
+        {
+            "id": "4_w5",
+            "category": "职业",
+            "word": "scientist",
+            "meaning": "科学家",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjOUMxN0ZGIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5zY2llbnRpc3Q8L3RleHQ+Cjx0ZXh0IHg9IjEwMCIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuenkeWtpuWutzwvdGV4dD4KPC9zdmc+"
+        },
+        {
+            "id": "4_w6",
+            "category": "职业",
+            "word": "engineer",
+            "meaning": "工程师",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNEE5MEUyIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5lbmdpbmVlcjwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+5bel56iL5biIPC90ZXh0Pgo8L3N2Zz4="
+        },
+        {
+            "id": "4_w7",
+            "category": "旅行",
+            "word": "vacation",
+            "meaning": "假期",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkZDMTA3IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj52YWNhdGlvbjwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+5YGH5pyfPC90ZXh0Pgo8L3N2Zz4="
+        },
+        {
+            "id": "4_w8",
+            "category": "旅行",
+            "word": "Great Wall",
+            "meaning": "长城",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjQTU3OTM5IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5HcmVhdCBXYWxsPC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7plb/ln448L3RleHQ+Cjwvc3ZnPg=="
+        },
+        {
+            "id": "4_w9",
+            "category": "旅行",
+            "word": "photo",
+            "meaning": "照片",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkY5RUI1IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5waG90bzwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+54Wn54mHPC90ZXh0Pgo8L3N2Zz4="
+        },
+        {
+            "id": "4_w10",
+            "category": "健康生活",
+            "word": "exercise",
+            "meaning": "锻炼",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkY2QjZCIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5leGVyY2lzZTwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+6ZSA54K5PC90ZXh0Pgo8L3N2Zz4="
+        },
+        {
+            "id": "4_w11",
+            "category": "健康生活",
+            "word": "vegetable",
+            "meaning": "蔬菜",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNENCQjE3IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj52ZWdldGFibGU8L3RleHQ+Cjx0ZXh0IHg9IjEwMCIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuiMtuiPnDwvdGV4dD4KPC9zdmc+"
+        },
+        {
+            "id": "4_w12",
+            "category": "健康生活",
+            "word": "regularly",
+            "meaning": "有规律地",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjOUMxN0ZGIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5yZWd1bGFybHk8L3RleHQ+Cjx0ZXh0IHg9IjEwMCIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuacieinhOW+l+WcqDwvdGV4dD4KPC9zdmc+"
+        },
+        {
+            "id": "4_w13",
+            "category": "科技",
+            "word": "computer",
+            "meaning": "电脑",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNEE5MEUyIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5jb21wdXRlcjwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+55S16ISRLOeUteWtkDwvdGV4dD4KPC9zdmc+"
+        },
+        {
+            "id": "4_w14",
+            "category": "科技",
+            "word": "tablet",
+            "meaning": "平板电脑",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNDhDQUU0IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj50YWJsZXQ8L3RleHQ+Cjx0ZXh0IHg9IjEwMCIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuW5s+adv+eUteWtkDwvdGV4dD4KPC9zdmc+"
+        },
+        {
+            "id": "4_w15",
+            "category": "科技",
+            "word": "internet",
+            "meaning": "互联网",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkY5ODAwIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5pbnRlcm5ldDwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+5LqS6IGU572RPC90ZXh0Pgo8L3N2Zz4="
+        },
+        {
+            "id": "4_w16",
+            "category": "文化差异",
+            "word": "culture",
+            "meaning": "文化",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkY5RUI1IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5jdWx0dXJlPC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7mlofljJY8L3RleHQ+Cjwvc3ZnPg=="
+        },
+        {
+            "id": "4_w17",
+            "category": "文化差异",
+            "word": "American",
+            "meaning": "美国的",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNEE5MEUyIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BbWVyaWNhbjwvdGV4dD4KPHRleHQgeD0iMTAwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+576O5Zu955qEPC90ZXh0Pgo8L3N2Zz4="
+        },
+        {
+            "id": "4_w18",
+            "category": "文化差异",
+            "word": "British",
+            "meaning": "英国的",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkY2QjZCIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ccml0aXNoPC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7oi7Hlm73nmoQ8L3RleHQ+Cjwvc3ZnPg=="
+        },
+        {
+            "id": "4_w19",
+            "category": "文化差异",
+            "word": "respect",
+            "meaning": "尊重",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjOUMxN0ZGIiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5yZXNwZWN0PC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7lsZXph4w8L3RleHQ+Cjwvc3ZnPg=="
+        },
+        {
+            "id": "4_w20",
+            "category": "环境保护",
+            "word": "save",
+            "meaning": "节约",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjMDA5Njg4IiByeD0iMjAiLz4KPHRleHQgeD0iMTAwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5zYXZlPC90ZXh0Pgo8dGV4dCB4PSIxMDAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7oioLnqIs8L3RleHQ+Cjwvc3ZnPg=="
+        }
+        ]
     }
 }
