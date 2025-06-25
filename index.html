@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小学英语练习助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 小学英语练习助手 🌟</h1>
+            <p>让我们一起快乐学英语！</p>
+        </header>
+
+        <!-- 年级选择 -->
+        <div id="grade-selection" class="section">
+            <h2>请选择年级</h2>
+            <div class="grade-grid">
+                <button class="grade-btn" data-grade="1">一年级</button>
+                <button class="grade-btn" data-grade="2">二年级</button>
+                <button class="grade-btn" data-grade="3">三年级</button>
+                <button class="grade-btn" data-grade="4">四年级</button>
+                <button class="grade-btn" data-grade="5">五年级</button>
+                <button class="grade-btn" data-grade="6">六年级</button>
+            </div>
+        </div>
+
+        <!-- 主菜单 -->
+        <div id="main-menu" class="menu-container" style="display: none;">
+            <div class="current-grade">
+                <h3>当前年级: <span id="current-grade-display">三年级</span></h3>
+                <button class="small-btn" onclick="backToGradeSelection()">切换年级</button>
+            </div>
+            <div class="menu-grid">
+                <button class="menu-btn" onclick="startDialogue()">
+                    💬 对话练习
+                </button>
+                <button class="menu-btn" onclick="showWordPracticeOptions()">
+                    ✏️ 单词练习
+                </button>
+            </div>
+            <div class="score-display">
+                <p>今日得分: <span id="total-score">0</span> 分</p>
+            </div>
+        </div>
+
+        <!-- 单词练习选项 -->
+        <div id="word-practice-options" class="section" style="display: none;">
+            <h2>单词练习模式</h2>
+            <div class="practice-options-grid">
+                <button class="option-btn" onclick="startWordPractice('cn-to-en')">
+                    🇨🇳➡️🇬🇧 看中文写英文
+                </button>
+                <button class="option-btn" onclick="startWordPractice('en-to-cn')">
+                    🇬🇧➡️🇨🇳 看英文写中文
+                </button>
+                <button class="option-btn" onclick="startWordPractice('fill-blanks')">
+                    🔤 填空练习
+                </button>
+                <button class="option-btn" onclick="startWordPractice('match')">
+                    🔄 单词配对
+                </button>
+            </div>
+            <button onclick="backToMenu()" class="back-btn">返回主菜单</button>
+        </div>
+
+        <!-- 对话练习模块 -->
+        <div id="dialogue-section" class="section" style="display: none;">
+            <h2>对话练习</h2>
+            <div class="dialogue-category-selector">
+                <select id="dialogue-category">
+                    <option value="all">所有对话</option>
+                    <!-- 动态填充对话类别 -->
+                </select>
+            </div>
+            <div class="dialogue-container">
+                <div id="dialogue-content"></div>
+                <div class="dialogue-controls">
+                    <button id="play-dialogue" class="action-btn">🔊 播放对话</button>
+                    <button id="next-dialogue" class="action-btn">下一个对话</button>
+                    <button onclick="backToMenu()" class="back-btn">返回主页</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 单词练习模块 -->
+        <div id="word-section" class="section" style="display: none;">
+            <h2>单词练习</h2>
+            <div class="word-category-selector">
+                <select id="word-category">
+                    <option value="all">所有单词</option>
+                    <!-- 动态填充单词类别 -->
+                </select>
+            </div>
+            <div id="practice-mode-display" class="practice-mode-display">
+                当前模式: <span id="current-mode">看中文写英文</span>
+            </div>
+            <div class="word-practice-container">
+                <div id="word-display">
+                    <img id="word-image" src="" alt="单词图片">
+                    <p id="word-prompt"></p>
+                    <div id="word-audio">
+                        <button id="play-word" class="audio-btn">🔊</button>
+                    </div>
+                </div>
+                <div class="input-area">
+                    <input type="text" id="word-input" placeholder="请输入答案" maxlength="30">
+                    <button id="check-word" class="action-btn">检查答案</button>
+                </div>
+                <div id="word-result"></div>
+                <div class="word-controls">
+                    <button id="next-word" class="action-btn">下一个单词</button>
+                    <button onclick="backToWordOptions()" class="back-btn">返回练习选项</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 单词配对练习 -->
+        <div id="match-section" class="section" style="display: none;">
+            <h2>单词配对练习</h2>
+            <div class="match-container">
+                <div id="match-board"></div>
+                <div id="match-result"></div>
+                <div class="match-controls">
+                    <button id="new-match-game" class="action-btn">新游戏</button>
+                    <button onclick="backToWordOptions()" class="back-btn">返回练习选项</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
